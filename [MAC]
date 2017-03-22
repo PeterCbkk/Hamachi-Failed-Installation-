@@ -1,0 +1,80 @@
+
+-- Logfile started at 2017-03-22 19:47:33 +0000 --
+LiliApp: Started in installer GUI mode as user:petercarlsen, uid:502, euid:502, gid:20, egid:20
+InstallFlow: Custom installer plugin found.
+InstallFlow: Starting flow 
+InstallFlow: Setting up step kLiInstallStepLicense
+InstallFlow: Starting step kLiInstallStepLicense
+Welcome: Install pressed
+Elevator: Successfully elevated to root
+InstallFlow: Finishing step kLiInstallStepLicense
+InstallFlow: Step finished kLiInstallStepLicense with result code 0.
+InstallFlow: Continuing flow...
+InstallFlow: Current step is 1, steps count is 7
+InstallFlow: Setting up step kLiInstallStepPrecheck
+InstallFlow: Starting step kLiInstallStepPrecheck
+ScriptRunner: Should run as user (502): /private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app/Contents/Resources/precheck.sh with args (
+    "/tmp/lili/liliinstallog - 2017-03-22 19:47:33.txt",
+    "/private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app",
+    "/",
+    "-psn_0_2396745"
+)
+ScriptRunner: Starting child: "/private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app/Contents/Resources/precheck.sh" "/tmp/lili/liliinstallog - 2017-03-22 19:47:33.txt" "/private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app" "/" "-psn_0_2396745"
+ScriptRunner: Child launched with PID: 34994
+ScriptRunner: Child output is:
+ScriptRunner: precheck: started with file  on path / and bundlepath /private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app
+current uid=502, euid=502, user=petercarlsen
+precheck: finished
+ScriptRunner: Child's log closed, waiting for it's termination...
+ScriptRunner: Child is exited: true, exit code: 0
+ScriptRunner: finished successfully
+InstallFlow: Finishing step kLiInstallStepPrecheck
+InstallFlow: Step finished kLiInstallStepPrecheck with result code 0.
+InstallFlow: Continuing flow...
+InstallFlow: Current step is 2, steps count is 7
+InstallFlow: Setting up step kLiInstallStepPreflight
+InstallFlow: Starting step kLiInstallStepPreflight
+ScriptRunner: Should run as root: /private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app/Contents/Resources/preflight.sh with args (
+    "/tmp/lili/liliinstallog - 2017-03-22 19:47:33.txt",
+    "/private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app",
+    "/",
+    "-psn_0_2396745"
+)
+Elevator: Started elevated app /private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app/Contents/Resources/preflight.sh with args:
+Elevator: /tmp/lili/liliinstallog - 2017-03-22 19:47:33.txt
+Elevator: /private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app
+Elevator: /
+Elevator: -psn_0_2396745
+Elevator: (null)
+Elevator: App output is:
+Elevator: Starting preflight
+Stopping user MenuBars
+Stopping root MenuBar (if exists)
+Stopping Engine
+Stopping user Hamachi apps
+petercarlsen
+/
+Stopping root Hamachi apps (if exists)
+Unloading kext
+End preflight
+Elevator: Finished to run elevated, is exited: true, status: 0
+ScriptRunner: finished successfully
+InstallFlow: Finishing step kLiInstallStepPreflight
+InstallFlow: Step finished kLiInstallStepPreflight with result code 0.
+InstallFlow: Continuing flow...
+InstallFlow: Current step is 3, steps count is 7
+InstallFlow: Setting up step kLiInstallStepUncompress
+InstallFlow: Starting step kLiInstallStepUncompress
+Uncompress: started
+Elevator: Started elevated app /usr/bin/ditto with args:
+Elevator: -x
+Elevator: /private/var/folders/cy/9vysrv0j4pq7h48mtmjkqtnh0000gp/T/AppTranslocation/E3B9C692-9C6A-4127-A55F-11E5755BDBCD/d/LogMeInHamachiInstaller 2.app/Contents/Resources/archive.pax.gz
+Elevator: /
+Elevator: (null)
+Elevator: App output is:
+Elevator: Finished to run elevated, is exited: true, status: 1
+Uncompress: uncompressing failed
+InstallFlow: Aborted:NSConcreteNotification 0x274c80 {name = kLiInstallStepAbortedNotification; object = <LiUncompressView: 0x34fda0>}
+InstallFlow: Aborting flow
+Finish: Asking plugins whether to show custom app starter check box and always run custom app (defaults are YES, NO)
+Finish: Answers from plugins whether to show custom app starter check box and always run custom app are YES, NO, YES, NO
